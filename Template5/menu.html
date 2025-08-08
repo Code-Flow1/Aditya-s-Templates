@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Bella Vista Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Bella Vista</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link active">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="reservations.html" class="nav-link">Reservations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Our Menu</h1>
+            <p>Exquisite dishes crafted with passion and the finest ingredients</p>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="menu-section">
+        <div class="container">
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="starters">Starters</button>
+                <button class="category-btn" data-category="mains">Main Courses</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+                <button class="category-btn" data-category="drinks">Beverages</button>
+            </div>
+
+            <!-- Starters -->
+            <div class="menu-category active" id="starters">
+                <h2>Appetizers & Starters</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Appetizer">
+                        <div class="menu-item-content">
+                            <h3>Pan-Seared Scallops</h3>
+                            <p>Fresh Atlantic scallops with cauliflower purée and pancetta crisps</p>
+                            <div class="menu-item-footer">
+                                <span class="price">$18</span>
+                                <button class="btn btn-sm add-to-order" data-dish="Pan-Seared Scallops" data-price="18">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Soup">
+                        <div class="menu-item-content">
+                            <h3>Lobster Bisque</h3>
+                            <p>Rich and creamy lobster bisque with cognac and fresh herbs</p>
+                            <div class="menu-item-footer">
+                                <span class="price">$14</span>
+                                <button class="btn btn-sm add-to-order" data-dish="Lobster Bisque" data-price="14">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Carpaccio">
+                        <div class="menu-item-content">
+                            <h3>Beef Carpaccio</h3>
+                            <p>Thinly sliced prime beef with arugula, capers, and parmesan</p>
+                            <div class="menu-item-footer">
+                                <span class="price">$16</span>
+                                <button class="btn btn-sm add-to-order" data-dish="Beef Carpaccio" data-price="16">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/1251208/pexels-photo-1251208.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Salad">
+                        <div class="menu-item-content">
+                            <h3>Burrata Caprese</h3>
+                            <p>Fresh burrata with heirloom tomatoes and basil oil</p>
+                            <div class="menu-item-footer">
+                                <span class="price">$15</span>
+                                <button class="btn btn-sm add-to-order" data-dish="Burrata Caprese" data-price="15">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Courses -->
+            <div class="menu-category" id="mains">
+                <h2>Main Courses</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Salmon">
+                        <div class="menu-item-content">
+                            <h3>Grilled Atlantic Salmon</h3>
+                            <p>Fresh salmon with herb butter, asparagus, and lemon risotto</p>
+                            <div class="menu-item-footer">
+                                <span class="price">$28</span>
+                                <button class="btn btn-sm add-to-order" data-dish="Grilled Atlantic Salmon" data-price="28">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/769289/pexels-photo-769289.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Steak">
+                        <div class="menu-item-content">
+                            <h3>Prime Ribeye Steak</h3>
+                            <p>28-day aged ribeye with roasted vegetables and red wine jus</p>
+                            <div class="menu-item-footer">
+                                <span class="price">$42</span>
+                                <button class="btn btn-sm add-to-order" data-dish="Prime Ribeye Steak" data-price="42">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Duck">
+                        <div class="menu-item-content">
+                            <h3>Duck Confit</h3>
+                            <p>Slow-cooked duck leg with cherry gastrique and potato gratin</p>
+                            <div class="menu-item-footer">
+                                <span class="price">$32</span>
+                                <button class="btn btn-sm add-to-order" data-dish="Duck Confit" data-price="32">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Pasta">
+                        <div class="menu-item-content">
+                            <h3>Lobster Ravioli</h3>
+                            <p>House-made ravioli filled with lobster in saffron cream sauce</p>
+                            <div class="menu-item-footer">
+                                <span class="price">$34</span>
+                                <button class="btn btn-sm add-to-order" data-dish="Lobster Ravioli" data-price="34">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desserts -->
+            <div class="menu-category" id="desserts">
+                <h2>Desserts</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Tiramisu">
+                        <div class="menu-item-content">
+                            <h3>Classic Tiramisu</h3>
+                            <p>Traditional Italian tiramisu with ladyfingers and mascarpone</p>
+                            <div class="menu-item-footer">
+                                <span class="price">$12</span>
+                                <button class="btn btn-sm add-to-order" data-dish="Classic Tiramisu" data-price="12">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/1126728/pexels-photo-1126728.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cheesecake">
+                        <div class="menu-item-content">
+                            <h3>New York Cheesecake</h3>
+                            <p>Creamy cheesecake with berry compote and graham cracker crust</p>
+                            <div class="menu-item-footer">
+                                <span class="price">$10</span>
+                                <button class="btn btn-sm add-to-order" data-dish="New York Cheesecake" data-price="10">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/1998633/pexels-photo-1998633.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Chocolate Lava">
+                        <div class="menu-item-content">
+                            <h3>Chocolate Lava Cake</h3>
+                            <p>Warm chocolate cake with molten center and vanilla ice cream</p>
+                            <div class="menu-item-footer">
+                                <span class="price">$14</span>
+                                <button class="btn btn-sm add-to-order" data-dish="Chocolate Lava Cake" data-price="14">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Crème Brûlée">
+                        <div class="menu-item-content">
+                            <h3>Vanilla Crème Brûlée</h3>
+                            <p>Classic French custard with caramelized sugar and fresh berries</p>
+                            <div class="menu-item-footer">
+                                <span class="price">$11</span>
+                                <button class="btn btn-sm add-to-order" data-dish="Vanilla Crème Brûlée" data-price="11">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Beverages -->
+            <div class="menu-category" id="drinks">
+                <h2>Beverages</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/544961/pexels-photo-544961.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Wine">
+                        <div class="menu-item-content">
+                            <h3>House Red Wine</h3>
+                            <p>Carefully selected Cabernet Sauvignon from Napa Valley</p>
+                            <div class="menu-item-footer">
+                                <span class="price">$8</span>
+                                <button class="btn btn-sm add-to-order" data-dish="House Red Wine" data-price="8">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cocktail">
+                        <div class="menu-item-content">
+                            <h3>Signature Martini</h3>
+                            <p>Premium vodka with house-made vermouth and olive garnish</p>
+                            <div class="menu-item-footer">
+                                <span class="price">$12</span>
+                                <button class="btn btn-sm add-to-order" data-dish="Signature Martini" data-price="12">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/434295/pexels-photo-434295.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Coffee">
+                        <div class="menu-item-content">
+                            <h3>Espresso</h3>
+                            <p>Rich Italian espresso made from premium Arabica beans</p>
+                            <div class="menu-item-footer">
+                                <span class="price">$4</span>
+                                <button class="btn btn-sm add-to-order" data-dish="Espresso" data-price="4">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.pexels.com/photos/1187876/pexels-photo-1187876.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Tea">
+                        <div class="menu-item-content">
+                            <h3>Earl Grey Tea</h3>
+                            <p>Premium black tea blend with bergamot and citrus notes</p>
+                            <div class="menu-item-footer">
+                                <span class="price">$5</span>
+                                <button class="btn btn-sm add-to-order" data-dish="Earl Grey Tea" data-price="5">Add to Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Summary -->
+    <div class="order-summary" id="orderSummary">
+        <div class="order-content">
+            <h3>Your Order</h3>
+            <div class="order-items" id="orderItems">
+                <p class="empty-order">No items added yet</p>
+            </div>
+            <div class="order-total">
+                <strong>Total: $<span id="orderTotal">0</span></strong>
+            </div>
+            <div class="order-actions">
+                <button class="btn btn-primary" id="checkoutBtn">Proceed to Checkout</button>
+                <button class="btn btn-secondary" id="clearOrderBtn">Clear Order</button>
+            </div>
+        </div>
+        <button class="order-toggle" id="orderToggle">
+            <span class="order-count" id="orderCount">0</span>
+            View Order
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bella Vista</h3>
+                    <p>Experience the finest in culinary excellence with our carefully crafted dishes and exceptional service.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>123 Fine Dining Street<br>
+                    Gourmet City, GC 12345</p>
+                    <p>Phone: (555) 123-4567<br>
+                    Email: info@bellavista.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for special offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bella Vista Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

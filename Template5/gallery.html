@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Bella Vista Restaurant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Bella Vista</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="reservations.html" class="nav-link">Reservations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="page-header-content">
+            <h1>Gallery</h1>
+            <p>A visual journey through our culinary artistry and elegant atmosphere</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <!-- Gallery Filters -->
+            <div class="gallery-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="food">Food</button>
+                <button class="filter-btn" data-filter="interior">Interior</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="team">Team</button>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Food Images -->
+                <div class="gallery-item" data-category="food" data-image="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Grilled Salmon">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Grilled Atlantic Salmon</h3>
+                            <p>Fresh salmon with seasonal vegetables</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food" data-image="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Prime Beef">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Prime Beef Tenderloin</h3>
+                            <p>Perfectly aged with truffle sauce</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food" data-image="https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Lobster Bisque">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Lobster Bisque</h3>
+                            <p>Rich and creamy with cognac</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food" data-image="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/1640772/pexels-photo-1640772.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Duck Confit">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Duck Confit</h3>
+                            <p>Slow-cooked with cherry gastrique</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food" data-image="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/291528/pexels-photo-291528.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Tiramisu">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Classic Tiramisu</h3>
+                            <p>Traditional Italian dessert</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food" data-image="https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Pasta">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Lobster Ravioli</h3>
+                            <p>House-made with saffron cream</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interior Images -->
+                <div class="gallery-item" data-category="interior" data-image="https://images.pexels.com/photos/1833349/pexels-photo-1833349.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/1833349/pexels-photo-1833349.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Main Dining Room">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Main Dining Room</h3>
+                            <p>Elegant ambiance for fine dining</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="interior" data-image="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Private Dining">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Private Dining Room</h3>
+                            <p>Intimate space for special occasions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="interior" data-image="https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/1581384/pexels-photo-1581384.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Bar Area">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Wine Bar</h3>
+                            <p>Curated selection of fine wines</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="interior" data-image="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Patio">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Outdoor Patio</h3>
+                            <p>Al fresco dining experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Images -->
+                <div class="gallery-item" data-category="team" data-image="https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/887827/pexels-photo-887827.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Head Chef">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Chef Marco at Work</h3>
+                            <p>Culinary artistry in action</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="team" data-image="https://images.pexels.com/photos/8629131/pexels-photo-8629131.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/8629131/pexels-photo-8629131.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Kitchen Team">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Kitchen Brigade</h3>
+                            <p>Our talented culinary team</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="team" data-image="https://images.pexels.com/photos/4252137/pexels-photo-4252137.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/4252137/pexels-photo-4252137.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Pastry Chef">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Pastry Perfection</h3>
+                            <p>Creating sweet masterpieces</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Events Images -->
+                <div class="gallery-item" data-category="events" data-image="https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/1395967/pexels-photo-1395967.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Wine Tasting">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Wine Tasting Event</h3>
+                            <p>Monthly wine pairing dinners</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events" data-image="https://images.pexels.com/photos/1247755/pexels-photo-1247755.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/1247755/pexels-photo-1247755.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Special Dinner">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Chef's Table Experience</h3>
+                            <p>Exclusive culinary experience</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events" data-image="https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/1410235/pexels-photo-1410235.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Private Event">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Private Celebration</h3>
+                            <p>Memorable moments with loved ones</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="food" data-image="https://images.pexels.com/photos/1251208/pexels-photo-1251208.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/1251208/pexels-photo-1251208.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Artisanal Plating">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Artisanal Presentation</h3>
+                            <p>Every plate is a work of art</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="interior" data-image="https://images.pexels.com/photos/544961/pexels-photo-544961.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/544961/pexels-photo-544961.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Wine Cellar">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Wine Cellar</h3>
+                            <p>Extensive collection of fine wines</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="events" data-image="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=1200">
+                    <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Cocktail Hour">
+                    <div class="gallery-overlay">
+                        <div class="overlay-content">
+                            <h3>Cocktail Reception</h3>
+                            <p>Pre-dinner drinks and canapés</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" id="lightboxClose">&times;</button>
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-nav">
+                <button class="lightbox-prev" id="lightboxPrev">❮</button>
+                <button class="lightbox-next" id="lightboxNext">❯</button>
+            </div>
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bella Vista</h3>
+                    <p>Experience the finest in culinary excellence with our carefully crafted dishes and exceptional service.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">Facebook</a>
+                        <a href="#" class="social-link">Instagram</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="reservations.html">Reservations</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>123 Fine Dining Street<br>
+                    Gourmet City, GC 12345</p>
+                    <p>Phone: (555) 123-4567<br>
+                    Email: info@bellavista.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for special offers and updates</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bella Vista Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
