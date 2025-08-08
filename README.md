@@ -56,6 +56,6 @@ A minimal yet stylish restaurant design.
 **💼 Codeflow** – Affordable Websites & Web Apps  
 📩 **Email:** aditya.y15.work@gmail.com
 📩 **Email:** admin@codeflow.shop
-🌐 **Website:** [codeflow.com](https://codeflow.shop)
+🌐 **Website:** [codeflow.shop](https://codeflow.shop)
 
 
